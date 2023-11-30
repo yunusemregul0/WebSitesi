@@ -42,7 +42,7 @@
 /* CUSTOM RESETS
 ================================================== */
 a { 
-    color: #ffd500;
+    color: #ff000d;
 }
 
 a:focus,
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* btn colors */
 .btn-yellow {
-    background-color: #ffd500; 
+    background-color: #ff000d; 
     color: #fff;
 }
 
@@ -120,12 +120,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-yellow-border {
-    border: 1px solid #ffd500;
+    border: 1px solid #ff000d;
 }
 
 .btn.btn-yellow-border:hover,
 .btn.btn-yellow-border:focus {
-    background-color: #ffd500; 
+    background-color: #ff000d; 
     color: #fff; 
 }
 
@@ -169,7 +169,7 @@ textarea {
 }
 
 .form-control:focus {
-    border-color: #ffd500;
+    border-color: #ff000d;
     box-shadow: none;
 }
 
@@ -192,7 +192,7 @@ input[type=search] + button {
 
 input[type=search] + button:hover,
 input[type=search] + button:focus {
-    color: #ffd500;
+    color: #ff000d;
 }
 
 /* Checkbox fields */
@@ -245,7 +245,7 @@ input[type=radio] {
     top: 50%;
     left: 3px;
     font-size: 15px;
-    color: #ffd500;;
+    color: #ff000d;;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -282,12 +282,12 @@ input[type=radio] {
 
 .checkbox [type="checkbox"]:checked:focus + label:before,
 .checkbox [type="checkbox"]:not(:checked):focus + label:before {
-    border: 1px dotted #ffd500;
+    border: 1px dotted #ff000d;
 }
 
 .checkbox [type="checkbox"]:not(:checked) + label:hover:before,
 .checkbox [type="checkbox"]:checked + label:hover:before {
-    border: 1px solid #ffd500;
+    border: 1px solid #ff000d;
 }
 
 /* Radiobutton fields */
@@ -335,7 +335,7 @@ input[type=radio] {
     height: 12px;
     top: 50%;
     left: 4px;
-    background-color: #ffd500;
+    background-color: #ff000d;
     border-radius: 50px;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -373,12 +373,12 @@ input[type=radio] {
 
 .radio-btn [type="radio"]:checked:focus + label:before,
 .radio-btn [type="radio"]:not(:checked):focus + label:before {
-    border: 1px dotted #ffd500;
+    border: 1px dotted #ff000d;
 }
 
 .radio-btn [type="radio"]:checked + label:hover:before,
 .radio-btn [type="radio"]:not(:checked) + label:hover:before {
-    border: 1px solid #ffd500;
+    border: 1px solid #ff000d;
 }
 
 /* Selectpicker */
@@ -428,7 +428,7 @@ input[type=radio] {
 .selectpicker-styled:hover,
 .selectpicker-styled:active, 
 .selectpicker-styled.active {
-    border-color: #ffd500;
+    border-color: #ff000d;
 }
 
 .selectpicker-styled:active:after,
@@ -451,7 +451,7 @@ input[type=radio] {
 
 .selectpicker-options li {
     padding: 12px 15px;
-    border: 1px solid #ffd500;
+    border: 1px solid #ff000d;
     border-top: 0; 
     -moz-transition: all 0.15s ease-in;
     -o-transition: all 0.15s ease-in;
@@ -461,8 +461,8 @@ input[type=radio] {
 }
 
 .selectpicker-options li:hover {
-    color: #ffd500;
-    border-color: #ffd500;
+    color: #ff000d;
+    border-color: #ff000d;
 }
 
 /* ELEMENTS
@@ -478,8 +478,8 @@ input[type=radio] {
 }
 
 .nav-tabs.tab-style > li.active > a {
-    background-color: #ffd500;
-    border: 1px solid #ffd500;
+    background-color: #ff000d;
+    border: 1px solid #ff000d;
 }
 
 .nav-tabs.tab-style > li > a {
@@ -496,7 +496,7 @@ input[type=radio] {
 }
 
 .nav-tabs.tab-style > li > a:hover {
-    border-color: #ffd500;
+    border-color: #ff000d;
 }
 
 /* Accordion */
@@ -528,7 +528,7 @@ input[type=radio] {
     width: 100%;
     padding: 10px 40px 10px 15px;
     color: #333;
-    background-color: #ffd500;
+    background-color: #ff000d;
 }
 
 .accordion .panel-heading a.collapsed {
@@ -537,7 +537,7 @@ input[type=radio] {
 
 .accordion .panel-heading a.collapsed:hover,
 .accordion.accordion-gray .panel-heading a.collapsed:hover{
-    background-color: #ffd500;   
+    background-color: #ff000d;   
 }
 
 .accordion .panel-heading a.collapsed::after {
@@ -727,7 +727,7 @@ html, body {
 }
 
 .yellow-bg {
-  background-color: #ffd500;  
+  background-color: #ff000d;  
 }
 
 .black-bg {
@@ -786,7 +786,7 @@ a.white-text:hover {
 }
 
 .yellow-text {
-  color: #ffd500;  
+  color: #ff000d;  
 }
 
 /* Text styles */
@@ -816,7 +816,7 @@ a.white-text:hover {
 }
 
 .breadcrumb .active {
-  color: #ffd500;
+  color: #ff000d;
 }
 
 /* Pagination */
@@ -840,7 +840,7 @@ a.white-text:hover {
 .pagination > li.active > a,
 .pagination > li > a:hover,
 .pagination > li.active > a:hover {
-  background-color: #ffd500;
+  background-color: #ff000d;
   color: #fff;
 }
 
@@ -920,7 +920,7 @@ blockquote {
 }
 
 .site-title.yellow-text:hover  {
-  color: #ffd500;   
+  color: #ff000d;   
 }
 
 /* Navigation */
@@ -949,7 +949,7 @@ blockquote {
 .slicknav_nav li.active > a,
 .slicknav_nav .dropdown.active > a a,
 .slicknav_nav .active .active a {
-  color: #ffd500;  
+  color: #ff000d;  
 }
 
 .slicknav_nav > li > a .slicknav_arrow {
@@ -959,7 +959,7 @@ blockquote {
 .dropdown-menu li.active a,
 .dropdown-menu li.active a:hover {
   background-color: transparent;
-  color: #ffd500;    
+  color: #ff000d;    
 }
 
 .navbar-nav > li > a:hover,
@@ -981,7 +981,7 @@ blockquote {
   visibility: hidden;
   border-radius: 0;
   border: 0;
-  border-top: 5px solid #ffd500; 
+  border-top: 5px solid #ff000d; 
   transition: all 0.2s;
   -moz-transition: all 0.2s;
   -webkit-transition: all 0.2s;
@@ -1083,7 +1083,7 @@ blockquote {
 }
 
 .hero-arrow a:hover {
-  color: #ffd500; 
+  color: #ff000d; 
 }
 
 /* SITEMAIN
@@ -1232,7 +1232,7 @@ display: none;
 .service-icon .fa {
   font-size: 30px;
   line-height: 65px;
-  color: #ffd500;
+  color: #ff000d;
 }
 
 .service-title {
@@ -1297,7 +1297,7 @@ display: none;
 }
 
 .team-member-position {
-  color: #ffd500; 
+  color: #ff000d; 
   font-style: italic;
 }
 
@@ -1345,11 +1345,11 @@ display: none;
 }
 
 .testimonial-1 {
-  background: url(../img/testimonial-1.jpg) no-repeat;
+  background: url(../img/profile2.jpg) no-repeat;
 }
 
 .testimonial-2 {
-  background: url(../img/testimonial-2.jpg) no-repeat;
+  background: url(../img/profile2.jpg) no-repeat;
 }
 
 .testimonial-owner {
@@ -1520,8 +1520,8 @@ display: none;
 
 .portfolio-sorting .active,
 .portfolio-sorting .btn:active {
-  background-color: #ffd500; 
-  border-color: #ffd500; 
+  background-color: #ff000d; 
+  border-color: #ff000d; 
   color: #fff;
   box-shadow: none;
 }
@@ -1679,7 +1679,7 @@ display: none;
 
 a.post-title:hover,
 .blog-post > a:hover + .post-content .post-title {
-  color: #ffd500;
+  color: #ff000d;
 }
 
 .post-meta {
@@ -1715,7 +1715,7 @@ a.post-title:hover,
 }
 
 .post-meta li a:hover {
-  color: #ffd500;;
+  color: #ff000d;;
 } 
 
 .post-info {
@@ -1774,7 +1774,7 @@ a.post-title:hover,
 
 .widget-categories li a:hover {
   padding-left: 10px;
-  color: #ffd500;
+  color: #ff000d;
 }
 
 /* Latest-posts */
@@ -1819,7 +1819,7 @@ a.post-title:hover,
 }
 
 .posts-list li a:hover .widget-post-title {
-  color: #ffd500;
+  color: #ff000d;
 }
 
 /* Tags */ 
@@ -1837,7 +1837,7 @@ a.post-title:hover,
 }
 
 .widget-tags ul li a:hover {
-  background-color: #ffd500;
+  background-color: #ff000d;
   color: #fff;
 }
 
@@ -2034,6 +2034,6 @@ a.post-title:hover,
 }
 
 .copyright .yellow-text:hover {
-  color: #ffd500;
+  color: #ff000d;
   text-decoration: underline;
 }
