@@ -447,18 +447,15 @@
             Sidebar end
         ***********************************-->
 
-      <!--**********************************
-            Content body start
-        ***********************************-->
       <div class="content-body">
         <div class="row page-titles mx-0">
           <div class="col p-md-0">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="javascript:void(0)">Email</a>
+                <a href="javascript:void(0)">Dashboard</a>
               </li>
               <li class="breadcrumb-item active">
-                <a href="javascript:void(0)">Gönder</a>
+                <a href="javascript:void(0)">Home</a>
               </li>
             </ol>
           </div>
@@ -467,114 +464,45 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-6">
               <div class="card">
                 <div class="card-body">
-                  <div class="email-left-box">
-                    <a
-                      href="email-compose.html"
-                      class="btn btn-primary btn-block"
-                      >Oluştur</a
-                    >
-                    <div class="mail-list mt-4">
-                      <a
-                        href="email-inbox.html"
-                        class="list-group-item border-0 text-primary p-r-0"
-                        ><i class="fa fa-inbox font-18 align-middle mr-2"></i>
-                        <b>Gelenler</b>
-                        <span
-                          class="badge badge-primary badge-sm float-right m-t-5"
-                          >198</span
-                        >
-                      </a>
-                      <a href="#" class="list-group-item border-0 p-r-0"
-                        ><i
-                          class="fa fa-paper-plane font-18 align-middle mr-2"
-                        ></i
-                        >Gönder</a
-                      >
-                      <a href="#" class="list-group-item border-0 p-r-0"
-                        ><i class="fa fa-star-o font-18 align-middle mr-2"></i
-                        >Önemli
-                        <span
-                          class="badge badge-danger badge-sm float-right m-t-5"
-                          >47</span
-                        >
-                      </a>
-                      <a href="#" class="list-group-item border-0 p-r-0"
-                        ><i
-                          class="mdi mdi-file-document-box font-18 align-middle mr-2"
-                        ></i
-                        >Taslaklar</a
-                      ><a href="#" class="list-group-item border-0 p-r-0"
-                        ><i class="fa fa-trash font-18 align-middle mr-2"></i
-                        >Çöp</a
-                      >
-                    </div>
-                  </div>
-                  <div class="email-right-box">
-                    <div role="toolbar" class="toolbar">
-                      <div class="btn-group">
-                        <button
-                          aria-expanded="false"
-                          data-toggle="dropdown"
-                          class="btn btn-dark dropdown-toggle"
-                          type="button"
-                        >
-                          Daha Fazla <span class="caret m-l-5"></span>
-                        </button>
-                        <div class="dropdown-menu">
-                          <span class="dropdown-header">Seçenekler :</span>
-                          <a href="javascript: void(0);" class="dropdown-item"
-                            >Okunmamış İşaretle</a
-                          >
-                          <a href="javascript: void(0);" class="dropdown-item"
-                            >Taslaklara ekle</a
-                          >
-                          <a href="javascript: void(0);" class="dropdown-item"
-                            >Yıldız Ekle</a
-                          >
-                          <a href="javascript: void(0);" class="dropdown-item"
-                            >Sessiz</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="email-list m-t-15">
-                      <div class="message">
-                        <a href="email-read.html">
-                          <div class="col-mail col-mail-1">
-                            <div class="email-checkbox">
-                              <input type="checkbox" id="chk2" />
-                              <label class="toggle" for="chk2"></label>
-                            </div>
-                            <span class="star-toggle ti-star"></span>
-                          </div>
-                          <div class="col-mail col-mail-2">
-                            <div class="subject">
-                              ArchitectureSite Admin Paneli, Bu bir test maildir
-                            </div>
-                            <div class="date">11:49 am</div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- panel -->
-                    <div class="row">
-                      <div class="col-7">
-                        <div class="text-left">1 - 20 arası listeleniyor</div>
-                      </div>
-                      <div class="col-5">
-                        <div class="btn-group float-right">
-                          <button class="btn btn-gradient" type="button">
-                            <i class="fa fa-angle-left"></i>
-                          </button>
-                          <button class="btn btn-dark" type="button">
-                            <i class="fa fa-angle-right"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+                  <h4 class="card-title">Sayfadaki Bileşenler</h4>
+                  <div class="table-responsive">
+                    <table class="table header-border">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Tanım</th>
+                          <th scope="col">Metin</th>
+                          <th scope="col">Resim</th>
+                          <th scope="col">Güncelle</th>
+                          <th scope="col">Sil</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>1</th>
+                          <td>Ana Sayfa Main</td>
+                          <td>Sadelik verimliğin yapı taşıdır.</td>
+                          <td>Resim Adresi</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="btn mb-1 btn-rounded btn-outline-success"
+                              >Güncelle</a
+                            >
+                          </td>
+                          <td>
+                            <a
+                              href="#"
+                              class="btn mb-1 btn-rounded btn-outline-warning"
+                              >Sil</a
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -583,6 +511,11 @@
         </div>
         <!-- #/ container -->
       </div>
+      <!--**********************************
+            Content body end
+        ***********************************-->
+      <!-- row -->
+
       <!--**********************************
             Content body end
         ***********************************-->

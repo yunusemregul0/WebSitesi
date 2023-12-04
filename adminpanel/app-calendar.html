@@ -13,6 +13,10 @@
       href="/images/favicon.png"
     />
     <!-- Custom Stylesheet -->
+    <link
+      href="/plugins/fullcalendar/css/fullcalendar.min.css"
+      rel="stylesheet"
+    />
     <link href="/css/style.css" rel="stylesheet" />
   </head>
 
@@ -120,7 +124,7 @@
                         <a href="javascript:void()">
                           <img
                             class="float-left mr-3 avatar-img"
-                            src="/images/avatar/1.jpg"
+                            src="images/avatar/1.jpg"
                             alt=""
                           />
                           <div class="notification-content">
@@ -297,7 +301,7 @@
                   <div class="dropdown-content-body">
                     <ul>
                       <li>
-                        <a href="/app-profile.html"
+                        <a href="app-profile.html"
                           ><i class="icon-user"></i> <span>Profile</span></a
                         >
                       </li>
@@ -455,10 +459,10 @@
           <div class="col p-md-0">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="javascript:void(0)">Email</a>
+                <a href="javascript:void(0)">Dashboard</a>
               </li>
               <li class="breadcrumb-item active">
-                <a href="javascript:void(0)">Gönder</a>
+                <a href="javascript:void(0)">Home</a>
               </li>
             </ol>
           </div>
@@ -470,115 +474,165 @@
             <div class="col-lg-12">
               <div class="card">
                 <div class="card-body">
-                  <div class="email-left-box">
-                    <a
-                      href="email-compose.html"
-                      class="btn btn-primary btn-block"
-                      >Oluştur</a
-                    >
-                    <div class="mail-list mt-4">
-                      <a
-                        href="email-inbox.html"
-                        class="list-group-item border-0 text-primary p-r-0"
-                        ><i class="fa fa-inbox font-18 align-middle mr-2"></i>
-                        <b>Gelenler</b>
-                        <span
-                          class="badge badge-primary badge-sm float-right m-t-5"
-                          >198</span
-                        >
-                      </a>
-                      <a href="#" class="list-group-item border-0 p-r-0"
-                        ><i
-                          class="fa fa-paper-plane font-18 align-middle mr-2"
-                        ></i
-                        >Gönder</a
-                      >
-                      <a href="#" class="list-group-item border-0 p-r-0"
-                        ><i class="fa fa-star-o font-18 align-middle mr-2"></i
-                        >Önemli
-                        <span
-                          class="badge badge-danger badge-sm float-right m-t-5"
-                          >47</span
-                        >
-                      </a>
-                      <a href="#" class="list-group-item border-0 p-r-0"
-                        ><i
-                          class="mdi mdi-file-document-box font-18 align-middle mr-2"
-                        ></i
-                        >Taslaklar</a
-                      ><a href="#" class="list-group-item border-0 p-r-0"
-                        ><i class="fa fa-trash font-18 align-middle mr-2"></i
-                        >Çöp</a
-                      >
-                    </div>
+                  <div class="card-title">
+                    <h4>Takvim</h4>
                   </div>
-                  <div class="email-right-box">
-                    <div role="toolbar" class="toolbar">
-                      <div class="btn-group">
-                        <button
-                          aria-expanded="false"
-                          data-toggle="dropdown"
-                          class="btn btn-dark dropdown-toggle"
-                          type="button"
+                  <div class="row">
+                    <div class="col-lg-4 mt-5">
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#add-category"
+                        class="btn btn-primary btn-block"
+                        ><i class="ti-plus f-s-12 m-r-5"></i> Yeni Görev
+                        Oluştur</a
+                      >
+                      <div id="external-events" class="m-t-20">
+                        <p>Görevleri takvime taşıyın ve bırakın</p>
+                        <div
+                          class="external-event bg-primary text-white"
+                          data-class="bg-primary"
                         >
-                          Daha Fazla <span class="caret m-l-5"></span>
-                        </button>
-                        <div class="dropdown-menu">
-                          <span class="dropdown-header">Seçenekler :</span>
-                          <a href="javascript: void(0);" class="dropdown-item"
-                            >Okunmamış İşaretle</a
-                          >
-                          <a href="javascript: void(0);" class="dropdown-item"
-                            >Taslaklara ekle</a
-                          >
-                          <a href="javascript: void(0);" class="dropdown-item"
-                            >Yıldız Ekle</a
-                          >
-                          <a href="javascript: void(0);" class="dropdown-item"
-                            >Sessiz</a
-                          >
+                          <i class="fa fa-move"></i>A Müşterisi ile görüşme
+                        </div>
+                        <div
+                          class="external-event bg-success text-white"
+                          data-class="bg-success"
+                        >
+                          <i class="fa fa-move"></i>B Müşterisi Analiz
+                        </div>
+                        <div
+                          class="external-event bg-warning text-white"
+                          data-class="bg-warning"
+                        >
+                          <i class="fa fa-move"></i>C müşterisi Teknik Çizim
+                        </div>
+                        <div
+                          class="external-event bg-dark text-white"
+                          data-class="bg-dark"
+                        >
+                          <i class="fa fa-move"></i>D müşterisi proje teslim
+                        </div>
+                      </div>
+                      <!-- checkbox -->
+                      <div class="checkbox m-t-40">
+                        <input id="drop-remove" type="checkbox" />
+                        <label for="drop-remove"
+                          >Görevi takvime sürükledikten sonra kaldır</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-box m-b-50">
+                        <div id="calendar"></div>
+                      </div>
+                    </div>
+
+                    <!-- end col -->
+                    <!-- BEGIN MODAL -->
+                    <div class="modal fade none-border" id="event-modal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">
+                              <strong>Yeni Görev Ekle</strong>
+                            </h4>
+                          </div>
+                          <div class="modal-body"></div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-default waves-effect"
+                              data-dismiss="modal"
+                            >
+                              Kapat
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-success save-event waves-effect waves-light"
+                            >
+                              Görev Oluştur
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-danger delete-event waves-effect waves-light"
+                              data-dismiss="modal"
+                            >
+                              Sil
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="email-list m-t-15">
-                      <div class="message">
-                        <a href="email-read.html">
-                          <div class="col-mail col-mail-1">
-                            <div class="email-checkbox">
-                              <input type="checkbox" id="chk2" />
-                              <label class="toggle" for="chk2"></label>
-                            </div>
-                            <span class="star-toggle ti-star"></span>
+                    <!-- Modal Add Category -->
+                    <div class="modal fade none-border" id="add-category">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">
+                              <strong>Kategori Ekle</strong>
+                            </h4>
                           </div>
-                          <div class="col-mail col-mail-2">
-                            <div class="subject">
-                              ArchitectureSite Admin Paneli, Bu bir test maildir
-                            </div>
-                            <div class="date">11:49 am</div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <label class="control-label"
+                                    >Kategori İsmi</label
+                                  >
+                                  <input
+                                    class="form-control form-white"
+                                    placeholder="Görev İsmi"
+                                    type="text"
+                                    name="category-name"
+                                  />
+                                </div>
+                                <div class="col-md-6">
+                                  <label class="control-label"
+                                    >Kategori Rengi Seç</label
+                                  >
+                                  <select
+                                    class="form-control form-white"
+                                    data-placeholder="Renk Seçin..."
+                                    name="category-color"
+                                  >
+                                    <option value="success">Success</option>
+                                    <option value="danger">Danger</option>
+                                    <option value="info">Info</option>
+                                    <option value="pink">Pink</option>
+                                    <option value="primary">Primary</option>
+                                    <option value="warning">Warning</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </form>
                           </div>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- panel -->
-                    <div class="row">
-                      <div class="col-7">
-                        <div class="text-left">1 - 20 arası listeleniyor</div>
-                      </div>
-                      <div class="col-5">
-                        <div class="btn-group float-right">
-                          <button class="btn btn-gradient" type="button">
-                            <i class="fa fa-angle-left"></i>
-                          </button>
-                          <button class="btn btn-dark" type="button">
-                            <i class="fa fa-angle-right"></i>
-                          </button>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-default waves-effect"
+                              data-dismiss="modal"
+                            >
+                              Kapat
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-danger waves-effect waves-light save-category"
+                              data-dismiss="modal"
+                            >
+                              Kaydet
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <!-- END MODAL -->
                   </div>
                 </div>
               </div>
+              <!-- /# card -->
             </div>
+            <!-- /# column -->
           </div>
         </div>
         <!-- #/ container -->
@@ -611,5 +665,10 @@
     <script src="/js/settings.js"></script>
     <script src="/js/gleek.js"></script>
     <script src="/js/styleSwitcher.js"></script>
+
+    <script src="/plugins/jqueryui/js/jquery-ui.min.js"></script>
+    <script src="/plugins/moment/moment.min.js"></script>
+    <script src="/plugins/fullcalendar/js/fullcalendar.min.js"></script>
+    <script src="/js/plugins-init/fullcalendar-init.js"></script>
   </body>
 </html>
