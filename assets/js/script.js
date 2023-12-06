@@ -36,6 +36,8 @@ $(document).ready(function(){
   });
 });
 
+
+
 // Testimonials slick slider
 $(function () {
     $(".testimonials").slick({
@@ -384,4 +386,22 @@ if($('#map').length >0 ) {
       
   }
   google.maps.event.addDomListener(window, 'load', init);
+}
+
+function duyuruGoster(baslik, icerik, resim) {
+  const modal = document.getElementById('duyuruDetayModal');
+  const modalBaslik = document.getElementById('modalBaslik');
+  const modalResim = document.getElementById('modalResim');
+  const modalIcerik = document.getElementById('modalIcerik');
+
+  modalBaslik.textContent = baslik;
+  modalResim.src = resim;
+  modalResim.alt = baslik;
+  modalIcerik.textContent = icerik;
+  modal.style.display = 'block';
+}
+
+function kapatModal() {
+  const modal = document.getElementById('duyuruDetayModal');
+  modal.style.display = 'none';
 }
