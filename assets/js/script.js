@@ -139,7 +139,7 @@ $(function () {
 
 
     //Featured Works Carousel
-    $('#threeSlidesSlider').carousel({ interval: false });
+    $('#threeSlidesSlider').carousel({ interval: 5000 });
 
     $('.three-slides-slider .item').each(function(){
       var itemToClone = $(this);
@@ -160,8 +160,8 @@ $(function () {
     });
 
     //Team Carousel
-    $('#oneSlidesSlider').carousel({ interval: false });
-    $('#fourSlidesSlider').carousel({ interval: false });
+    $('#oneSlidesSlider').carousel({ interval: 10000 });
+    $('#fourSlidesSlider').carousel({ interval: 10000 });
 
     $('.carousel-sync').on('slide.bs.carousel', function(ev) {
         var dir = ev.direction == 'right' ? 'prev' : 'next';
